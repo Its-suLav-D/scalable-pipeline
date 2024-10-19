@@ -19,13 +19,13 @@ data = {
     "capital-gain": 2174,
     "capital-loss": 0,
     "hours-per-week": 40,
-    "native-country": "United-States"
+    "native-country": "United-States",
 }
 
 # Making the POST request
 try:
     response = requests.post(url, json=data)
-    
+
     # Check if the request was successful
     if response.status_code == 200:
         result = response.json()

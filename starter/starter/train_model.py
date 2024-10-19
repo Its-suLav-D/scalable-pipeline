@@ -6,19 +6,21 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 from ml.data import process_data
 from ml.model import train_model
-import logging 
-import joblib 
+import logging
+import joblib
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 # Add code to load in the data.
 try:
     data = pd.read_csv("starter/data/census.csv")
     logging.info(f"Data loaded successfully. Shape: {data.shape}")
-    
+
     # Clean column names by stripping leading/trailing spaces
     data.columns = data.columns.str.strip()
-    
+
     logging.info(f"Cleaned columns in the dataset: {data.columns.tolist()}")
 
 except FileNotFoundError:
