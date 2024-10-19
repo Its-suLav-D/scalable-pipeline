@@ -1,8 +1,8 @@
 # Model Card
 
 ## Model Details
-* Developer: [Your Name]
-* Model date: [Date]
+* Developer: Sulove 
+* Model date: 2024/10/18
 * Model version: 1.0
 * Model type: Random Forest Classifier
 * Training Data: Census Income Dataset
